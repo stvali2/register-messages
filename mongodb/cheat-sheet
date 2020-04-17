@@ -1,0 +1,15 @@
+"C:\Program Files\MongoDB\Server\4.2\bin\mongo.exe"
+
+show dbs
+use demo
+show tables
+show collections
+
+db.message.find()
+db.message.find({"_id": "1"})
+db.message.insert({"_id": "1"}, {"text": "hello world!"})
+db.message.update({"_id": "1"}, {"text": "hello world1" }, {upsert: true})
+db.message.remove({"_id": "1"})
+
+db.message.drop()
+db.dropDatabase()
