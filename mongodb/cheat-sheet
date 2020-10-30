@@ -1,4 +1,6 @@
-"C:\Program Files\MongoDB\Server\4.2\bin\mongo.exe"
+mongod --dbpath=/Users/valentinpetras/data/db
+
+mongo
 
 show dbs
 use demo
