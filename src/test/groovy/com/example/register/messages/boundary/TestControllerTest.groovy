@@ -1,12 +1,11 @@
 package com.example.register.messages.boundary
 
-import org.spockframework.spring.SpringBean
+
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest
 import org.springframework.test.web.servlet.MockMvc
 import org.springframework.test.web.servlet.ResultActions
-import org.springframework.test.web.servlet.setup.MockMvcBuilders
 import spock.lang.Specification
 
 import javax.servlet.http.HttpServletResponse
@@ -21,7 +20,7 @@ class TestControllerTest extends Specification {
     private MockMvc mockMvc
 
     def "finding hello world messages should work"() {
-        given: 'an message controller'
+        given: 'an test controller'
 
         when: 'get request is performed'
         ResultActions response = mockMvc.perform(get("/api/v1/test"))
