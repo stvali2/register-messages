@@ -34,6 +34,8 @@ class MessageControllerTest extends Specification {
 
         then: 'response status should be 200'
         response.andReturn().response.getStatus() == HttpServletResponse.SC_OK
+        and: 'result is successful'
+        response.andReturn().response.contentLength == 0
         and: 'message services get all should be called'
         1 * messageService.getAll() >> new ArrayList<MessageDto>()
     }

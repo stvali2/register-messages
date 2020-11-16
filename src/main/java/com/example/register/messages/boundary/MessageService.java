@@ -22,7 +22,7 @@ public class MessageService {
         this.transformer = transformer;
     }
 
-    List<MessageDto> getAll() {
+    public List<MessageDto> getAll() {
         return messagesRepository
                 .findAll()
                 .stream()
@@ -30,18 +30,18 @@ public class MessageService {
                 .collect(Collectors.toList());
     }
 
-    MessageDto create(MessageDto message) {
+    public MessageDto create(MessageDto message) {
         return transformer
                 .convertToDto(messagesRepository.insert(transformer.convertFromDto(message)));
     }
 
-    Optional<MessageDto> read(String id) {
+    public Optional<MessageDto> read(String id) {
         return messagesRepository
                 .findById(id)
                 .map(transformer::convertToDto);
     }
 
-    Optional<MessageDto> update(MessageDto message, String id) {
+    public Optional<MessageDto> update(MessageDto message, String id) {
         return messagesRepository
                 .findById(id)
                 .map(foundMessage -> {
@@ -52,7 +52,7 @@ public class MessageService {
                 .map(transformer::convertToDto);
     }
 
-    void delete(String id) {
+    public void delete(String id) {
         messagesRepository
                 .findById(id)
                 .ifPresent(message -> messagesRepository.deleteById(message.getId()));
