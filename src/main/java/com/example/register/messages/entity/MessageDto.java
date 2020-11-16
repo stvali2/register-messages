@@ -9,8 +9,8 @@ import java.io.Serializable;
 public class MessageDto implements Serializable {
 
     @JsonProperty("id")
-    private String id;
+    String id;
 
     @JsonProperty("text")
-    private String text;
+    String text;
 }
