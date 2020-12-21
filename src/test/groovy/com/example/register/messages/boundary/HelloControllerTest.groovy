@@ -13,8 +13,8 @@ import javax.servlet.http.HttpServletResponse
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get
 
 @AutoConfigureMockMvc
-@WebMvcTest(controllers = TestController)
-class TestControllerTest extends Specification {
+@WebMvcTest(controllers = HelloController)
+class HelloControllerTest extends Specification {
 
     @Autowired
     private MockMvc mockMvc
@@ -23,7 +23,7 @@ class TestControllerTest extends Specification {
         given: 'an test controller'
 
         when: 'get request is performed'
-        ResultActions response = mockMvc.perform(get("/api/v1/test"))
+        ResultActions response = mockMvc.perform(get("/api/v1/hello"))
 
         then: 'response status should be 200'
         response.andReturn().response.getStatus() == HttpServletResponse.SC_OK

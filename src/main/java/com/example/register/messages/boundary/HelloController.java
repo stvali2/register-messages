@@ -12,10 +12,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api/v1")
 @Api(value = "hello-world-message")
-public class TestController {
+public class HelloController {
 
     @ApiOperation(value = "View hello world message")
-    @GetMapping(value = "/test", produces = MediaType.TEXT_PLAIN_VALUE)
+    @GetMapping(value = "/hello", produces = MediaType.TEXT_PLAIN_VALUE)
     public String getHelloWorld() {
         log.info("get hello world message");
         return "Hello world!";
