@@ -8,10 +8,11 @@ show tables
 show collections
 
 db.message.find()
-db.message.find({"_id": "1"})
-db.message.insert({"_id": "1"}, {"text": "hello world!"})
+db.message.insert({"_id": "1", "text": "hello world!"})
 db.message.update({"_id": "1"}, {"text": "hello world1" }, {upsert: true})
+db.message.find({"_id": "1"})
 db.message.remove({"_id": "1"})
 
 db.message.drop()
 db.dropDatabase()
+show dbs
