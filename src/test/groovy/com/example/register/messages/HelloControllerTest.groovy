@@ -1,5 +1,6 @@
-package com.example.register.messages.boundary
+package com.example.register.messages
 
+import com.example.register.messages.HelloController
 import jakarta.servlet.http.HttpServletResponse
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc

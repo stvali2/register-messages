@@ -1,8 +1,5 @@
-package com.example.register.messages.boundary;
+package com.example.register.messages;
 
-import com.example.register.messages.control.MessagesRepository;
-import com.example.register.messages.entity.MessageDto;
-import com.example.register.messages.entity.Transformer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

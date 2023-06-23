@@ -1,4 +1,4 @@
-package com.example.register.messages.entity;
+package com.example.register.messages;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

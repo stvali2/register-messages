@@ -1,4 +1,4 @@
-package com.example.register.messages.boundary;
+package com.example.register.messages;
 
 import io.swagger.v3.oas.annotations.Operation;
 import lombok.extern.slf4j.Slf4j;

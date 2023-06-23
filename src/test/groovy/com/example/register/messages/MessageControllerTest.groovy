@@ -1,6 +1,8 @@
-package com.example.register.messages.boundary
+package com.example.register.messages
 
-import com.example.register.messages.entity.MessageDto
+import com.example.register.messages.MessageController
+import com.example.register.messages.MessageService
+import com.example.register.messages.MessageDto
 import jakarta.servlet.http.HttpServletResponse
 import org.spockframework.spring.SpringBean
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc

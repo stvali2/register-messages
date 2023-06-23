@@ -1,4 +1,4 @@
-package com.example.register.messages.entity;
+package com.example.register.messages;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Value;

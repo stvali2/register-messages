@@ -1,6 +1,5 @@
-package com.example.register.messages.control;
+package com.example.register.messages;
 
-import com.example.register.messages.entity.Message;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 

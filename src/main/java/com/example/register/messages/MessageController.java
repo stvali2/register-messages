@@ -1,6 +1,5 @@
-package com.example.register.messages.boundary;
+package com.example.register.messages;
 
-import com.example.register.messages.entity.MessageDto;
 import io.swagger.v3.oas.annotations.OpenAPIDefinition;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.info.Info;
