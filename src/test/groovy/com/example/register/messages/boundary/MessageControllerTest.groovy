@@ -1,6 +1,7 @@
 package com.example.register.messages.boundary
 
 import com.example.register.messages.entity.MessageDto
+import jakarta.servlet.http.HttpServletResponse
 import org.spockframework.spring.SpringBean
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest
@@ -8,8 +9,6 @@ import org.springframework.test.web.servlet.MockMvc
 import org.springframework.test.web.servlet.ResultActions
 import org.springframework.test.web.servlet.setup.MockMvcBuilders
 import spock.lang.Specification
-
-import javax.servlet.http.HttpServletResponse
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get
 
@@ -22,7 +21,7 @@ class MessageControllerTest extends Specification {
     @SpringBean
     private MessageService messageService = Mock(MessageService)
 
-    def setup(){
+    def setup() {
         mockMvc = MockMvcBuilders.standaloneSetup(new MessageController(messageService)).build()
     }
 
