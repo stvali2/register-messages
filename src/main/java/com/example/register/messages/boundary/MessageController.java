@@ -17,12 +17,13 @@ import java.util.Optional;
 @RestController
 @RequestMapping("/api/v1")
 @OpenAPIDefinition(
-        info = @Info(title = "Hello World API",
-                description = "Register messages",
+        info = @Info(title = "Register messages API",
+                description = "Register messages Spring WebMvc",
                 termsOfService = "Copyright - 2019",
                 version = "0.0.1"
         ),
         tags = @Tag(name = "Register messages")
+        // http://localhost:8080/swagger-ui.html
 )
 public class MessageController {
 
