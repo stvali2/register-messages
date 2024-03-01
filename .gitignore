@@ -4,6 +4,8 @@ target/
 !**/src/main/**
 !**/src/test/**
 
+pom.xml.versionsBackup
+
 ### STS ###
 .apt_generated
 .classpath
