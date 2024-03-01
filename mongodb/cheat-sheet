@@ -1,6 +1,6 @@
-mongod --dbpath=/Users/valentinpetras/data/db
+mongod --dbpath=/Users/valentin/Developer/_data/db
 
-mongo
+mongosh
 
 show dbs
 use demo
