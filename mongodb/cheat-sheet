@@ -1,4 +1,4 @@
-mongod --dbpath=/Users/valentin/Developer/_data/db
+brew services start mongodb-community@7.0
 
 mongosh
 
@@ -8,10 +8,10 @@ show tables
 show collections
 
 db.message.find()
-db.message.insert({"_id": "1", "text": "hello world!"})
-db.message.update({"_id": "1"}, {"text": "hello world1" }, {upsert: true})
-db.message.find({"_id": "1"})
-db.message.remove({"_id": "1"})
+db.message.insertOne({_id: '1', text: 'hello world!', _class: 'com.example.register.messages.Message'})
+db.message.find({_id: '1'})
+db.message.updateOne({_id: '1'}, {$set: {text: 'hello world1'}})
+db.message.deleteOne({_id: '1'})
 
 db.message.drop()
 db.dropDatabase()
