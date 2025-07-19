@@ -1,4 +1,4 @@
-brew services start mongodb-community@7.0
+brew services start mongodb-community
 
 mongosh
 
@@ -16,3 +16,5 @@ db.message.deleteOne({_id: '1'})
 db.message.drop()
 db.dropDatabase()
 show dbs
+
+brew services stop mongodb-community
